@@ -4,7 +4,7 @@ const Hero = () => {
   return (
     <div className='container mx-auto mt-20'>
       
-    <div className="flex justify-center md:justify-between flex-wrap items-center">
+    <div className="grid grid-cols-1 md:grid-cols-2 items-center">
     <div className="">
     <div className="flex items-center gap-2">
         <hr className='w-10 border-primary' />
