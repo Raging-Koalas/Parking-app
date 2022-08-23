@@ -5,7 +5,7 @@ const Nav = () => {
   const [isOpen, setIsOpen] = useState(false);
   return (
     <div>
-    <nav className="bg-gray-800">
+    <nav className="dark:bg-gray-800 bg-slate-100 ">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
         <div className="flex-shrink-0">
@@ -17,37 +17,38 @@ const Nav = () => {
               <div className="ml-10 flex items-baseline space-x-4">
                 <a
                   href="#"
-                  className=" hover:bg-gray-700 text-white px-3 py-2 rounded-md text-sm font-medium"
+                  className=" hover:bg-gray-700 text-black dark:text-white px-3 py-2 rounded-md text-sm font-medium"
                 >
-                  Dashboard
+                  Home
                 </a>
 
                 <a
                   href="#"
-                  className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                  className=" hover:bg-gray-700 hover:text-black dark:text-white px-3 py-2 rounded-md text-sm font-medium"
                 >
-                  Team
+                  About
                 </a>
 
                 <a
                   href="#"
-                  className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                  className=" hover:bg-gray-700 hover:text-black dark:text-white px-3 py-2 rounded-md text-sm font-medium"
                 >
-                  Projects
+                  Service
                 </a>
 
                 <a
                   href="#"
-                  className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                  className=" hover:bg-gray-700 hover:text-black dark:text-white px-3 py-2 rounded-md text-sm font-medium"
                 >
-                  Calendar
+                  Pricing
+                
                 </a>
 
                 <a
                   href="#"
-                  className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                  className=" hover:bg-gray-700 hover:text-black dark:text-white px-3 py-2 rounded-md text-sm font-medium"
                 >
-                  Reports
+                    Contact Us
                 </a>
               </div>
             </div>
@@ -56,7 +57,7 @@ const Nav = () => {
             <button
               onClick={() => setIsOpen(!isOpen)}
               type="button"
-              className="bg-gray-900 inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white"
+              className="dark:bg-gray-900 text-black inline-flex items-center justify-center p-2 rounded-md dark:text-gray-400 hover:text-white hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white"
               aria-controls="mobile-menu"
               aria-expanded="false"
             >
@@ -120,28 +121,28 @@ const Nav = () => {
 
               <a
                 href="#"
-                className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+                className=" hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
               >
                 Team
               </a>
 
               <a
                 href="#"
-                className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+                className=" hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
               >
                 Projects
               </a>
 
               <a
                 href="#"
-                className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+                className=" hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
               >
                 Calendar
               </a>
 
               <a
                 href="#"
-                className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+                className=" hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
               >
                 Reports
               </a>
