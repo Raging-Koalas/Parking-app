@@ -1,12 +1,12 @@
 import React from 'react'
-import ParkingOwnerLogin from '../components/Login/ParkingOwnerLogin'
+import ParkingOwnerSignUp from '../components/Login/ParkingOwnerSignUp'
 import Nav from '../components/Navbar'
 
 const parkingownerlogin = () => {
   return (
     <div>
         <Nav/>
-        <ParkingOwnerLogin/>
+        <ParkingOwnerSignUp/>
     </div>
   )
 }
