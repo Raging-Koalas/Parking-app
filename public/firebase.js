@@ -3,8 +3,8 @@ import { initializeApp } from "firebase/app";
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
 
-import {getAuth, createUserWithEmailAndPassword, onAuthStateChanged, signOut, signInWithEmailAndPassword} from "firebase/auth"
-import { useEffect, useState } from "react";
+import {getAuth, createUserWithEmailAndPassword, onAuthStateChanged, signOut, signInWithEmailAndPassword, updateProfile} from "firebase/auth"
+import { useEffect, useState, useRef } from "react";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
@@ -20,9 +20,16 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 
 const auth = getAuth();
+//const [name, setName] = useState();
+//const displayName = "Fahim";
+export function updateName(name){
+  updateProfile(user, {displayName:name})
+};
 
 export function signup(email, password){
-    return createUserWithEmailAndPassword(auth, email, password);
+    return createUserWithEmailAndPassword(auth, email, password).then( (res) =>{
+      updateProfile(user, {displayName:name});
+    } ).catch( (err) =>{console.log("Error",err)} );
 }
 export function login(email, password){
     return signInWithEmailAndPassword(auth, email, password);
