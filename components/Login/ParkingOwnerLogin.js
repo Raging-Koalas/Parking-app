@@ -11,6 +11,10 @@ const ParkingOwnerLogin = () => {
 
     const emailRef = useRef();
     const passwordRef = useRef();
+    if(currentUser!= null)
+    {
+        router.push("/dashboard");
+    }
 
     async function handleLogin() {
         setLoading(true);

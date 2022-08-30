@@ -1,14 +1,15 @@
 import React from 'react'
-import Dashbard from '../components/Dashboard1'
-import Nav from '../components/Navbar'
 
-const dashboard1 = () => {
+import Dashboard from '../components/DashBoard/Dashboard'
+import Navbar from '../components/Navbar'
+
+const dashboard = () => {
   return (
     <div>
-        <Nav/>
-        <Dashbard/>
+        <Navbar/>
+        <Dashboard/>
     </div>
   )
 }
 
-export default dashboard1
+export default dashboard

@@ -7,7 +7,7 @@ const Nav = () => {
   return (
     <div>
       <nav className="dark:bg-gray-800 bg-slate-100 ">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-16">
           <div className="flex items-center justify-between h-16">
             <div className="flex-shrink-0">
               <p className="font-bold">Parking App</p>
@@ -22,7 +22,12 @@ const Nav = () => {
                   >
                     Home
                   </a></Link>
-
+                  <Link href="/dashboard"><a
+                    href="#"
+                    className="hover:bg-gray-700  hover:text-white text-blue block px-3 py-2 rounded-md text-base font-medium"
+                  >
+                    Dashboard
+                  </a></Link>
                   <a
                     href="#"
                     className=" hover:bg-gray-700 hover:text-black dark:text-white px-3 py-2 rounded-md text-sm font-medium"
